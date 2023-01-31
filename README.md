@@ -1,6 +1,6 @@
 # youtube_clone
 
-Youtube clone using Node.js, Express.js, MongoDB
+Responsive Youtube clone using Node.js, Express.js, MongoDB
 Users can upload videos and watch videos (thumbnail, title and description)
 
 Used basic HTML and CSS for the design and JavaScript for the functionality of the burger menu.
