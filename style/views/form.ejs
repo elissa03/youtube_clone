@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="fixedheader">
+            <div class="header">
+
+                <!-- Logo Sectiom -->
+                <div class="logo_section">
+                    <i id="menu" class="material-icons">menu</i>
+                    <img src="logo.png" alt="YouTube logo">
+                </div>
+    
+                <!-- Middle of header -->
+                <div class="middleheader">
+                    <!-- Search Section -->
+                    <div class="search_section">
+                        <form>
+                            <input type="text" placeholder="Search">
+                            <button>
+                                <i class="material-icons">search</i>
+                            </button>
+                        </form>
+                    </div>
+    
+                    <!-- Mic Section -->
+                    <div class="mic_section">
+                        <i class="material-icons">mic</i>
+                    </div>
+                </div>
+    
+                <!-- Icon Section -->
+                <div class="icon_section">
+                    <i class="material-icons display_this search">search</i>
+                    <form action="upload" method="get">
+                        <button>
+                            <i class="material-icons">videocam</i>
+                        </button>
+                    </form>
+    
+                    <i class="material-icons">apps</i>
+                    <i class="material-icons">notifications</i>
+                    <i class="material-icons display_this">account_circle</i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body Section -->
+        <div class="main_body">
+
+            <div class="sidebar">
+
+                <!-- Sidebar Section 1 -->
+                <div class="sidebar_categories">
+
+                    <div class="sidebar_category">
+                        <form method="get" action="home">
+                            <button>
+                                <i class="material-icons">home</i>
+                            </button>
+                            <span>Home</span>
+                        </form>
+                        
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">local_fire_department</i>
+                        <span>Trending</span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">subscriptions</i>
+                        <span>Subscriptions</span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Sidebar Section 2 -->
+                <div class="sidebar_categories">
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">library_add_check</i>
+                        <span>Library</span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">history</i>
+                        <span>History</span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">slideshow</i>
+                        <span>Your videos</span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">watch_later</i>
+                        <span>Watch later</span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">thumb_up</i>
+                        <span>Liked videos</video></span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Sidebar Section 3 -->
+                <div class="sidebar_categories subscriptions">
+                    <p>Subscriptions</p>
+
+                    <div class="sidebar_category">
+                        <img src="authorlogo.png">
+                        <span>
+                            <a href="https://www.youtube.com/c/Freecodecamp" target="_blank">freeCodeCamp.org</a>
+                        </span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <img src="genius.png">
+                        <span>
+                            <a href="https://www.youtube.com/rapgenius" target="_blank">Genius</a>
+                        </span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <img src="yestheory.png">
+                        <span>
+                            <a href="https://www.youtube.com/c/YesTheory" target="_blank">Yes Theory</a>
+                        </span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <img src="jubilee.png">
+                        <span>
+                            <a href="https://www.youtube.com/c/jubileemedia" target="_blank">Jubilee</a>
+                        </span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <img src="ellen.png">
+                        <span>
+                            <a href="https://www.youtube.com/c/TheEllenShow" target="_blank">TheEllenShow</a>
+                        </span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">keyboard_arrow_down</i>
+                        <span>Show 3 more</video></span>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- Sidebar Section 4 -->
+                <div class="sidebar_categories">
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">settings</i>
+                        <span>Settings</span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">flag</i>
+                        <span>Report History</span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">help_outline</i>
+                        <span>Help</span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">sms_failed</i>
+                        <span>Send feedback</span>
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+
+            <div class="form-section">
+                <h3 style="margin-top: 40px; margin-left: 100px;">Upload Video</h3>
+                <form action="onSubmit" method="post">
+                    <div>
+                        <label>Video Title</label>
+                        <input type="text" name="title" placeholder="Title">
+                    </div>
+
+                    <div>
+                        <label>Description</label>
+                        <input type="text" name="description" placeholder="Description">
+                    </div>
+
+                    <div>
+                        <label>Choose Video</label>
+                        <input type="file" name="vidfile" accept="video/*">
+                    </div>
+
+                    <div>
+                        <label>Choose Thumbnail</label>
+                        <input type="file" name="thumbfile" accept="image/*">
+                    </div>
+
+                    <button>Upload Video</button>
+                </form>
+            </div>
+            
+        </div>
+
+        <div class="bottom-menu">
+            <div class="bottom-category">
+                <div class="sidebar_category">
+                    <form method="get" action="home">
+                        <button>
+                            <i class="material-icons">home</i>
+                        </button>
+                    </form>
+                </div>
+    
+                <div class="sidebar_category">
+                    <i class="material-icons">local_fire_department</i>
+                </div>
+    
+                <div class="sidebar_category">
+                    <i class="material-icons">videocam</i>
+                </div>
+
+                <div class="sidebar_category">
+                    <i class="material-icons">subscriptions</i>
+                </div>
+
+                <div class="sidebar_category">
+                    <i class="material-icons">library_add_check</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('#menu');
+
+        const sidebar = document.querySelector('.sidebar');
+
+        menu.onclick = function(){
+            sidebar.classList.toggle("small-sidebar");
+        }
+
+    </script>
+</body>
+</html>

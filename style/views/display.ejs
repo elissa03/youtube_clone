@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Video</title>
+    <link rel="stylesheet" href="display.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <div class="fixedheader">
+            <div class="header">
+
+                <!-- Logo Sectiom -->
+                <div class="logo_section">
+                    <i id="menu" class="material-icons">menu</i>
+                    <img src="logo.png" alt="YouTube logo">
+                </div>
+    
+                <!-- Middle of header -->
+                <div class="middleheader">
+                    <!-- Search Section -->
+                    <div class="search_section">
+                        <form>
+                            <input type="text" placeholder="Search">
+                            <button>
+                                <i class="material-icons">search</i>
+                            </button>
+                        </form>
+                    </div>
+    
+                    <!-- Mic Section -->
+                    <div class="mic_section">
+                        <i class="material-icons">mic</i>
+                    </div>
+                </div>
+    
+                <!-- Icon Section -->
+                <div class="icon_section">
+                    <i class="material-icons display_this search">search</i>
+                    <form method="get" action="home">
+                        <button>
+                            <i class="material-icons">home</i>
+                        </button>
+                    </form>
+                    <form action="upload" method="get">
+                        <button>
+                            <i class="material-icons">videocam</i>
+                        </button>
+                    </form>
+    
+                    <i class="material-icons">apps</i>
+                    <i class="material-icons">notifications</i>
+                    <i class="material-icons display_this">account_circle</i>
+                </div>
+            </div>
+        </div>
+
+        <div class="vid_container">
+            <div class="video">
+                <video width="700px" height="400px" controls>
+                    <source src=<%=entry.videoPath%> type="video/mp4">
+                    
+                </video>
+                
+            </div>
+        
+            <div>
+                <h3><%=entry.title%></h3>
+            </div>
+        
+            <div>
+                <p><%-entry.description%></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
